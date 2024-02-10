@@ -86,3 +86,84 @@ if (validacao) {
   console.log('Acesso negado');
 }
 */
+
+/*------arrow fuction------
+const somar = (x,y) => {
+  return x+y;
+}
+
+--outra forma--
+
+const somar = (x,y) => x +y;
+console.log(somar(10,5));
+
+--outra forma --
+const sobrenome = sob => 'karli' + sob;*/
+
+/*------Variáveis dentro de funções------
+let count = 0;
+
+const add = () => count++;
+
+add()
+add()
+
+console.log(count); */
+
+/*------funções dentro de funções------
+
+function addSquares(a, b) {
+  const square = (x) => {
+    return x * x;
+  }
+
+  let sqrA = square(a);
+  let sqrB = square(b)
+  return sqrA + sqrB;
+}
+console.log(addSquares(2,3)); */
+
+/*------Introdução ao array------
+
+let idades = [10,20,30];
+let lista = ['eu tenho', idades]
+
+console.log(lista);
+
+let lista = ['bb',[1,2]];
+
+console.log(lista[1][0]); */
+
+/*------Operações básicas de array-----
+
+let ingredientes = [
+  'agua',
+  'farinha',
+  'ovo',
+  'corante',
+  'sal'
+];
+
+ingredientes.pop() // remove o ultimo item
+ingredientes.shift() // remove o primeiro item
+// não recomendavel --> ingredientes[5] = 'cebola'
+// recomendavel ingredientes.push('cebola')
+console.log(`Total de ingredientes: ${ingredientes.length}`); */
+
+/*------Exercicios array------
+
+let carros = ['BMW', 'Ferrari', 'Mercedes']
+let x = 1;
+console.log('1. ' + carros[x]);
+
+console.log('2. Lista com Audi:');
+carros[1] = 'Audi'
+console.log(carros);
+
+console.log('3. Lista com Volvo');
+carros.push('Volvo')
+console.log(carros);
+
+console.log('4. itens no array:' + carros.length); */
+
+
