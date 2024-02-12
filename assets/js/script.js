@@ -166,4 +166,62 @@ console.log(carros);
 
 console.log('4. itens no array:' + carros.length); */
 
+/*----- o que são objetos -----
 
+ let personagem = {
+  nome: 'karli', // propriedade: valor
+  idade: 23,
+  pais: 'Brasil',
+  olhos: ['preto', 'azul'],
+  caracteristicas: {
+    peso: 68,
+    altura: 1.65,
+  }
+ }
+
+console.log(`${personagem.nome} tem ${personagem.idade} anos.`);
+console.log(personagem.caracteristicas.altura);
+console.log(personagem.olhos[1]); */
+
+/*------Acessando e alterando objetos-----
+let personagem = {
+  nome: 'karli', // propriedade: valor
+  idade: 23,
+  pais: 'Brasil',
+  olhos: ['preto', 'azul'],
+  caracteristicas: {
+    peso: 68,
+    altura: 1.65,
+  }
+ }
+personagem.nome ='Pedro';
+personagem.caracteristicas.peso += 5;
+personagem.olhos.push('verde');
+
+console.log(personagem.nome);
+console.log(personagem.caracteristicas.peso);
+console.log(personagem.olhos);
+ 
+outro exemplo
+
+let personagem = {
+  nome:  'karli',
+  idade: 90,
+  carros: [
+    {modelo: 'Fiat', cor: 'preto'},
+    {modelo: 'Ferrari', cor:'vermelho'}
+  ]
+}
+
+console.log(personagem.carros[0].cor);*/
+
+//------Função dentro de objeto------
+
+let pessoa = {
+  nome: 'karli',
+  sobrenome: 'pinto',
+  idade: 23,
+  nomeCompleto: function(){
+    return `${}`
+  }
+}
