@@ -94,7 +94,7 @@ const somar = (x,y) => {
 
 --outra forma--
 
-const somar = (x,y) => x +y;
+const somar = (x,y) => x + y;
 console.log(somar(10,5));
 
 --outra forma --
@@ -215,13 +215,73 @@ let personagem = {
 
 console.log(personagem.carros[0].cor);*/
 
-//------Função dentro de objeto------
+/*------Função dentro de objeto------
 
 let pessoa = {
   nome: 'karli',
   sobrenome: 'pinto',
   idade: 23,
   nomeCompleto: function(){
-    return `${}`
+    return `${this.nome} ${this.sobrenome}`
   }
 }
+console.log(pessoa.nomeCompleto());*/
+
+/*------Loop for------
+
+for(let i = 0; i <= 10; i++){
+  console.log(i);
+}*/
+
+/*------Dando loop em arrays------
+
+let cores = [
+  {nome: 'preto', qt: 10},
+  {nome: 'azul', qt: 5},
+  {nome: 'vermelho', qt:15}
+]
+
+for(let n = 0; n < cores.length;n++){
+  console.log(cores[n]);
+}
+
+for(let i in cores){
+  console.log(cores[i].nome.toUpperCase());
+}
+
+for(let cor of cores){
+  console.log(`Nome: ${cor.nome.toUpperCase()} - ${cor.qt}`);
+} */
+
+/*------O loop while------
+
+let numero = 0;
+
+while(numero < 10){
+  console.log(`O numero da vez é ${numero}`);
+  numero++;
+} */
+
+/*------Exercicios de loops-----
+let fruits = ['maca', 'uva', 'banana']
+
+for(let i = 0; i < fruits.length; i++){
+  console.log(fruits[i]);
+}
+
+let n = 1;
+while(n <= 100){
+  console.log(n);
+  n++;
+} */
+
+/*-----Funções de Arrays-----
+
+let fruits = ['maca', 'uva', 'laranja','banana']
+
+//console.log(fruits.join(', '));
+fruits[fruits.length-1]='pera'
+
+console.log(fruits); */
+
+
