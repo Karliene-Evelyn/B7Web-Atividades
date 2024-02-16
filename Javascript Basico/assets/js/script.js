@@ -284,13 +284,13 @@ fruits[fruits.length-1]='pera'
 
 console.log(fruits); */
 
-//------Ordenação de Arrays-------
+/*------Ordenação de Arrays-------
 
-// let fruits = ['maca', 'ava', 'laraja', 'banana']
+let fruits = ['maca', 'ava', 'laraja', 'banana']
 
-// fruits.sort(); //ordem alfabetica
-// fruits.reverse(); //inverte ordem
-// console.log(fruits);
+fruits.sort(); //ordem alfabetica
+fruits.reverse(); //inverte ordem
+console.log(fruits);
 
 let cars = [ //lista de objetos
   { brand: 'fiat', year: 2022 }, // duas propriedade: brand e year
@@ -308,5 +308,43 @@ cars.sort((a, b) => {
     return 0;
   }
 })
+// outra maneira
+cars.sort((a, b) => {
+  return a.year -b.year;
+})
+cars.sort((a, b) => a.year -b.year)
+console.log(cars); */
 
-console.log(cars);
+/*------Iteração de Array------
+
+let fruits = ['banana', 'laranja', 'maca', 'pera']
+
+// let bigFruits = fruits.filter((item) => item.length > 4);
+
+// console.log(bigFruits);
+//----every
+let ok = fruits.every((value) => value.length > 3)
+
+if(ok){ // so returna true se todos forem maior
+  console.log('todos maior q 3');
+}
+else{
+  console.log('não são');
+}
+//----some
+let ok2 = fruits.some((value) => value.length > 6)
+
+if(ok2){ // so returna true se houver alguem maior
+  console.log('alguem e maior q 3');
+}
+else{
+  console.log('nenhum é');
+}
+
+//-----includes
+if(fruits.includes('banana')){
+  console.log('tem ');
+}else{
+  console.log('não tem');
+}*/
+
