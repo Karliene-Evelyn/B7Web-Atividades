@@ -284,4 +284,29 @@ fruits[fruits.length-1]='pera'
 
 console.log(fruits); */
 
+//------Ordenação de Arrays-------
 
+// let fruits = ['maca', 'ava', 'laraja', 'banana']
+
+// fruits.sort(); //ordem alfabetica
+// fruits.reverse(); //inverte ordem
+// console.log(fruits);
+
+let cars = [ //lista de objetos
+  { brand: 'fiat', year: 2022 }, // duas propriedade: brand e year
+  { brand: 'bmw', year: 2018 },
+  { brand: 'ferrari', year: 2020 }
+]
+
+cars.sort((a, b) => {
+  //a = item da vez, b = proximo item
+  if (a.year > b.year) {
+    return 1;
+  } else if (a.year < b.year) {
+    return -1;
+  } else {
+    return 0;
+  }
+})
+
+console.log(cars);
